@@ -19,6 +19,8 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Tutorials](#tutorials)
 * [Cheat Sheets](#cheat-sheets)
 * [Installation](#installation)
+* [Style Guides](#style-guides)
+* [Linters](#linters)
 
 ## Cryptography Resources
 
@@ -84,3 +86,20 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Typora](https://typora.io/)
 * [Go](https://go.dev/)
 * [Typescript](https://www.typescriptlang.org/download)
+
+## Style Guides
+
+* [Scala](https://docs.scala-lang.org/style/)
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+* [Python](https://www.python.org/dev/peps/pep-0008/)
+* [Typescript](https://google.github.io/styleguide/tsguide.html)
+* [Google Sytle Guides](https://google.github.io/styleguide/)
+* [Go](https://github.com/uber-go/guide/blob/master/style.md)
+
+## Linters
+
+* [Scalafmt](https://scalameta.org/scalafmt/)
+* [Pylint](https://pylint.pycqa.org/en/latest/)
+* [Typescript](https://palantir.github.io/tslint/)
+* [Go](https://pkg.go.dev/cmd/gofmt)
+* [C#](https://google.github.io/styleguide/csharp-style.html)
