@@ -2,7 +2,17 @@
 
 TODO: Intro
 
-## Table of Contents
+### Goals
+
+* Learn to code in at least two languages
+* Learn to Software Engineer
+  * Collaborative, industry-like FOSS project workflow
+* Learn enough Cryptography to be dangerous
+* Implement [MuSig2](https://eprint.iacr.org/2020/1261.pdf)
+
+Generally speaking these goals will be reached by asynchronously proceeding in the following stages:![Stages](./stages.png)
+
+## Resource Table of Contents
 
 * [Cryptography Resources](#cryptography-resources)
 * [Online Editors](#online-editors)
