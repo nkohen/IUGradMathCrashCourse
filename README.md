@@ -56,6 +56,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [GitHub Gists](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 * [Go](https://go.dev/tour/welcome/1)
 * [C#](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
+* [Scala](https://docs.scala-lang.org/tutorials.html)
 
 ## Cheat Sheets
 
