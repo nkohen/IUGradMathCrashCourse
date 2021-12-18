@@ -97,7 +97,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 * [Python](https://www.python.org/dev/peps/pep-0008/)
 * [Typescript](https://google.github.io/styleguide/tsguide.html)
-* [Google Sytle Guides](https://google.github.io/styleguide/)
+* [Google Style Guides](https://google.github.io/styleguide/)
 * [Go](https://github.com/uber-go/guide/blob/master/style.md)
 * [Haskell](https://wiki.haskell.org/Programming_guidelines#Good_Programming_Practice)
 
