@@ -1,6 +1,8 @@
 # Exercises
 
-Another [good resource](https://projecteuler.net/).
+Additional resources:
+* [Project Euler](https://projecteuler.net/)
+* [Cryptopals](https://cryptopals.com/)
 
 In vague order of difficulty,
 

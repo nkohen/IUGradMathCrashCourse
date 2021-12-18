@@ -50,6 +50,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Go](https://go.dev/play/)
 * [Python](https://www.online-python.com/)
 * [Typescript](https://www.typescriptlang.org/play)
+* [Haskell](https://replit.com/languages/haskell)
 
 ## Tutorials
 
@@ -59,6 +60,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Go](https://go.dev/tour/welcome/1)
 * [C#](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
 * [Scala](https://docs.scala-lang.org/tutorials.html)
+* [Haskell](http://learnyouahaskell.com/introduction)
 
 ## Cheat Sheets
 
@@ -71,6 +73,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Python](https://www.pythoncheatsheet.org/)
 * [Typescript](https://www.sitepen.com/blog/typescript-cheat-sheet)
 * [Go](https://devhints.io/go)
+* [Haskell](https://jutge.org/doc/haskell-cheat-sheet.pdf)
 
 ## Installation
 
@@ -86,6 +89,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Typora](https://typora.io/)
 * [Go](https://go.dev/)
 * [Typescript](https://www.typescriptlang.org/download)
+* [Haskell](https://www.haskell.org/platform/)
 
 ## Style Guides
 
@@ -95,6 +99,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Typescript](https://google.github.io/styleguide/tsguide.html)
 * [Google Style Guides](https://google.github.io/styleguide/)
 * [Go](https://github.com/uber-go/guide/blob/master/style.md)
+* [Haskell](https://wiki.haskell.org/Programming_guidelines#Good_Programming_Practice)
 
 ## Linters
 
@@ -103,3 +108,4 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [Typescript](https://palantir.github.io/tslint/)
 * [Go](https://pkg.go.dev/cmd/gofmt)
 * [C#](https://google.github.io/styleguide/csharp-style.html)
+* [Haskell](https://hackage.haskell.org/package/hlint)
