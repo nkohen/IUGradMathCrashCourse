@@ -1,6 +1,8 @@
 # IU Math Grad Student Coding & Crypto Crash Course
 
-TODO: Intro
+Using this repository, we will be learning the basics of software engineering and cryptography for the sake of learning new skills, building resumes, and for some, preparing to apply for summer internships in industry.
+
+This crash course will take place asyncronously over the Spring semester online, mostly here in this repository. There is also an accompanying slack channel for questions and discussions.
 
 ### Goals
 
@@ -9,8 +11,41 @@ TODO: Intro
   * Collaborative, industry-like FOSS project workflow
 * Learn enough Cryptography to be dangerous
 * Implement [MuSig2](https://eprint.iacr.org/2020/1261.pdf)
+* Document everything
 
 Generally speaking these goals will be reached by asynchronously proceeding in the following stages:![Stages](./stages.png)
+
+### Getting Started
+
+The first two concurrent stages of this course (as seen above) are to learn basic coding and to learn basic Elliptic Curve Cryptography (ECC). Make sure to write down notes of the important things you've learned as we will be collectively generating documents/resources to make this course easier for future years, as well as for our own use. This includes notes about individual programming languages, software engineering in general, and cryptographic concepts. Please also take notes about feedback for how this course may be run more effectively in the future, including changes that should be made to this or other teaching documents, which should be proposed as an issue or a pull request (more on what these are below).
+
+#### Starting to Code (to be done concurrently with learning ECC)
+
+We will learn basic coding through a [series of exercises](exercises.md) that I have collected. These exercises begin with simple tasks whose primary purpose is to get you familiar with the basic structure and syntax of programs in a few different programming languages. You can decide for yourself which problems seem interesting and even propose your own exercises.
+
+In the beginning it will suffice to attempt solutions to these exercises within [online code editors](#online-editors) (make sure to save your code on your computer though), and you can get started right away without any installation! But it will quickly become benificial to [install an Integrated Development Environment (IDE)](#installation) and write code locally on your own computer. Solutions will then be posted here, on this GitHub repository, as pull requests which your peers and I (and some other developers on occasion) will review and give feedback (for correctness as well as clarity and style/design). Note that you are allowed and encouraged to seek help on all of these exercises both from other people and the internet.
+
+You are also encouraged (when it makes sense) to look at, and even improve upon, other's solutions and see how fast and/or how simply/clearly you can solve each problem you attempt. One of the goals here is to learn multiple programming languages so, for example, if you are attempting a problem with the intention primarily of getting the hang of a new language, it is completly alright to simply transpose a solution from another language.
+
+As you are becoming more comfortable with writing code in multiple programming languages, I will also begin to assign [tutorials](#tutorials) on [using Git and GitHub](#git-and-github), as well as other things such as more interesting kinds of tests that we can write.
+
+#### Learning ECC (to be done concurrently with starting to code)
+
+I have compiled [a succinct list](#cryptography-resources) of relatively easy readings introducing the relevant ideas in cryptography, and in particular Elliptic Curve Schnorr digital signatures. I expect that these readings alone, along with some [accompanying exercises](exercises.md), will be sufficient to learn enough cryptography to acheive our goals, though further exploration is of course allowed/encouraged.
+
+I recommend you begin with the [Discrete Log Problem](DLOGExcerpt.pdf) and then the [Elliptic Curve](EllipticCurveExcerpt.pdf) excerpts, and then move on to my blog posts about [Schnorr signatures](https://suredbits.com/introduction-to-schnorr-signatures/) and then the [MuSig protocol](https://suredbits.com/schnorr-applications-musig/). Finally, you will be ready to read the actual [MuSig Paper](https://eprint.iacr.org/2018/068.pdf) followed by the [MuSig2 Paper](https://eprint.iacr.org/2020/1261.pdf) which improves upon it, though I do not expect or encourage any of you to read the actual proofs in these papers, only the actual constructions (which constitute only the first few pages of each paper). If you are interested in the details of why MuSig2 needs to avoid hash-sum collisions, I will also encourage you to read [Wagner Generalized Birthday Problem Paper](https://www.iacr.org/archive/crypto2002/24420288/24420288.pdf), which is also a fun read for its own sake.
+
+This reading list should suffice for our purposes, but I have also included some [extra readings below](#cryptography-resources) if you are interested in learning more, and there is much more out there and you should feel free to ask me for further resources if you have any specific (or vague) interests you would like to pursue.
+
+#### Git and GitHub
+
+To begin using GitHub, I recommend you begin with this [set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) tutorial to help with installation and configuration, and then this [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) tutorial where you should attempt to fork this repository instead of the one provided; this will allow you to make changes on your fork and propose them as pull requests to this repository.
+
+Once you have done that basic installation and configuration, I recommend following [this tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) which will walk you through the most common commands and workflow of using Git.
+
+#### Next Steps
+
+Once enough people have reached the point that they feel comfortable with basic coding, using GitHub collaboratively, and ECC (circa late Febuary - early March), we will open some design discussions on this repository and begin our first project of implementing [MuSig](https://eprint.iacr.org/2018/068.pdf)! We will implement this protocol in multiple languages and generate documentation about this protocol. After we iterate a few times to turn our working (and tested) implementations into final products, we will then implement the [MuSig2](https://eprint.iacr.org/2020/1261.pdf) protocol by building off of our first project. More to come after this if there is time.
 
 ## Resource Table of Contents
 
@@ -56,6 +91,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 ## Tutorials
 
 * [Linux Terminal](https://ubuntu.com/tutorials/command-line-for-beginners)
+* [Getting Started with Git and GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 * [Git](https://docs.github.com/en/get-started/quickstart)
 * [GitHub Gists](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 * [Go](https://go.dev/tour/welcome/1)
