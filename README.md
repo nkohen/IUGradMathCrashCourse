@@ -38,6 +38,7 @@ Generally speaking these goals will be reached by asynchronously proceeding in t
 * [MuSig Paper](https://eprint.iacr.org/2018/068.pdf)
 * [Wagner Generalized Birthday Problem Paper](https://www.iacr.org/archive/crypto2002/24420288/24420288.pdf)
 * [MuSig2 Paper](https://eprint.iacr.org/2020/1261.pdf)
+* [t-bast cheat sheat](https://github.com/t-bast/lightning-docs/blob/master/schnorr.md)
 * Extra
   * [FROST Paper](https://eprint.iacr.org/2020/852.pdf)
   * [MuSig-DN Paper](https://eprint.iacr.org/2020/1057.pdf)
