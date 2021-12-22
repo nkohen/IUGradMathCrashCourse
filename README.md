@@ -23,7 +23,7 @@ The first two concurrent stages of this course (as seen above) are to learn basi
 
 We will learn basic coding through a [series of exercises](exercises.md) that I have collected. These exercises begin with simple tasks whose primary purpose is to get you familiar with the basic structure and syntax of programs in a few different programming languages. You can decide for yourself which problems seem interesting and even propose your own exercises.
 
-In the beginning it will suffice to attempt solutions to these exercises within [online code editors](#online-editors) (make sure to save your code on your computer though), and you can get started right away without any installation! But it will quickly become benificial to [install an Integrated Development Environment (IDE)](#installation) and write code locally on your own computer. Solutions will then be posted here, on this GitHub repository, as pull requests which your peers and I (and some other developers on occasion) will review and give feedback (for correctness as well as clarity and style/design). Note that you are allowed and encouraged to seek help on all of these exercises both from other people and the internet.
+In the beginning it will suffice to attempt solutions to these exercises within [online code editors](#online-editors) (make sure to save your code on your computer though), and you can get started right away without any installation! But it will quickly become benificial to [install an Integrated Development Environment (IDE)](#installation) and write code locally on your own computer. Solutions will then be posted here, on this GitHub repository, as pull requests which your peers and I (and some other developers on occasion) will review and give feedback (for correctness as well as clarity and style/design). Note that you are allowed and encouraged to seek help on all of these exercises both from other people and the internet. If you have not yet installed git on your computer, you can submit solutions directly to me and I will push them onto this repository for review for you.
 
 You are also encouraged (when it makes sense) to look at, and even improve upon, other's solutions and see how fast and/or how simply/clearly you can solve each problem you attempt. One of the goals here is to learn multiple programming languages so, for example, if you are attempting a problem with the intention primarily of getting the hang of a new language, it is completly alright to simply transpose a solution from another language.
 
@@ -34,6 +34,8 @@ As you are becoming more comfortable with writing code in multiple programming l
 I have compiled [a succinct list](#cryptography-resources) of relatively easy readings introducing the relevant ideas in cryptography, and in particular Elliptic Curve Schnorr digital signatures. I expect that these readings alone, along with some [accompanying exercises](exercises.md), will be sufficient to learn enough cryptography to acheive our goals, though further exploration is of course allowed/encouraged.
 
 I recommend you begin with the [Discrete Log Problem](DLOGExcerpt.pdf) and then the [Elliptic Curve](EllipticCurveExcerpt.pdf) excerpts, and then move on to my blog posts about [Schnorr signatures](https://suredbits.com/introduction-to-schnorr-signatures/) and then the [MuSig protocol](https://suredbits.com/schnorr-applications-musig/). Finally, you will be ready to read the actual [MuSig Paper](https://eprint.iacr.org/2018/068.pdf) followed by the [MuSig2 Paper](https://eprint.iacr.org/2020/1261.pdf) which improves upon it, though I do not expect or encourage any of you to read the actual proofs in these papers, only the actual constructions (which constitute only the first few pages of each paper). If you are interested in the details of why MuSig2 needs to avoid hash-sum collisions, I will also encourage you to read [Wagner Generalized Birthday Problem Paper](https://www.iacr.org/archive/crypto2002/24420288/24420288.pdf), which is also a fun read for its own sake.
+
+None of these readings should be prohibitively hard, if something is it is probably not something you need to be reading (e.g. we won't be reading all of the MuSig or MuSig2 papers, only the construction parts), if you're unsure then ask!
 
 This reading list should suffice for our purposes, but I have also included some [extra readings below](#cryptography-resources) if you are interested in learning more, and there is much more out there and you should feel free to ask me for further resources if you have any specific (or vague) interests you would like to pursue.
 
@@ -118,6 +120,8 @@ Once enough people have reached the point that they feel comfortable with basic 
 * [Homebrew for Mac](https://brew.sh/)
 * [VirtualBox VM](https://www.virtualbox.org/)
 * [Scala](https://www.scala-sbt.org/1.x/docs/Setup.html)
+  * [This first for mac/linux](https://sdkman.io/install)
+
 * [Visual Studio](https://code.visualstudio.com/)
 * [IntelliJ](https://www.jetbrains.com/idea/)
 * [PyCharm](https://www.jetbrains.com/pycharm/)
