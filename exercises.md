@@ -17,6 +17,7 @@ In vague order of difficulty,
   * Write a function which, given a number, n, returns the nth [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
     * Make a function which is as short as possible
     * Make a function which is as fast as possible
+    * Make a function which extends this to the real numbers
 * Set Intersection (Join)
   * Write a function which takes two lists and returns their intersection
   * Write a version of this function which takes two functions from `Int -> T` and finds the intersection of the images of `{0, ..., n}`
