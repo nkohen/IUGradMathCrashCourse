@@ -30,6 +30,8 @@ In vague order of difficulty,
 * [Mandlebot](https://en.wikipedia.org/wiki/Mandelbrot_set) and other Fractal Fun (no testing necessary, just fun)
   * Make a program which visualizes part of the mandlebrot set
   * What other cool things can you make by modifying your solution?
+* Matrix Determinant
+  * Write a function that computes the determinant of any real-valued square matrix
 * Search
   * Write a function to search for the index of an element in a sorted list
 * [Sort](https://en.wikipedia.org/wiki/Sorting_algorithm)
