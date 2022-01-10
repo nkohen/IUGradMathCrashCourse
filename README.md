@@ -89,6 +89,7 @@ Once enough people have reached the point that they feel comfortable with basic 
 * [Python](https://www.online-python.com/)
 * [Typescript](https://www.typescriptlang.org/play)
 * [Haskell](https://replit.com/languages/haskell)
+* [Julia](https://julialang.org/learning/tryjulia/)
 
 ## Tutorials
 
