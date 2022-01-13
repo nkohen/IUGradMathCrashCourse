@@ -7,23 +7,24 @@ def get_square_matrix():
         try:
             dim = int(input("Enter number of rows/columns: "))
             if (dim <= 0):
-                raise Exception
+                raise RuntimeError
             break
-        except:
+        except ValueError:
+            print("Please enter positive integer")
+        except RuntimeError:
             print("Please enter positive integer")
 
     # Get matrix values
     matrix = []
-    print("Enter entries rowwise: ")
+    print("Enter entries rowwise with enters in between: ")
 
     for i in range(dim):
+        print("Row %d:" %(i+1))
         row = []
-        while (True):
+        while (len(row) < dim):
             try:
-                for j in range(dim):
-                    row.append(float(input()))
-                break
-            except:
+                row.append(float(input()))
+            except ValueError:
                 print("Please enter real numbers")
         matrix.append(row)
 
@@ -34,23 +35,21 @@ def det(matrix):
     dim = len(matrix)
     if (dim == 1):
         return matrix[0][0]
-    elif (dim == 2):
-        return (matrix[0][0] * matrix [1][1]) - (matrix[0][1] * matrix[1][0])
     else:
         ret = 0
         for i in range(dim):
-            ret += ((-1) ** i) * matrix[0][i] * det(remove_row_col(matrix,1,i+1))
+            ret += ((-1) ** i) * matrix[0][i] * det(first_minor(matrix,0,i))
         return ret
 
-# Removes the specified row and column from the given matrix
-def remove_row_col(matrix,r,c):
+# Returns a copy of the inputted matrix with the specified row and column removed
+def first_minor(matrix,r,c):
     matrix_copy = deepcopy(matrix)
-    del matrix_copy[r-1]
+    del matrix_copy[r]
     for i in range(len(matrix_copy)):
-        del matrix_copy[i][c-1]
+        del matrix_copy[i][c]
     return matrix_copy
 
-# Prints the given matrix
+# Prints the given matrix (from https://stackoverflow.com/questions/17870612/printing-a-two-dimensional-array-in-python/36538558)
 def print_matrix(matrix):
     print('\n'.join([' '.join(['{:4}'.format(item) for item in row])
                      for row in matrix]))
