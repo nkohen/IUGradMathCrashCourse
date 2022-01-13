@@ -1,18 +1,20 @@
 from copy import copy, deepcopy
 
-# Gets a real-valued square matrix from the user
-def get_square_matrix():
+def get_dim():
     # Get number of rows and columns from user
     while (True):
         try:
             dim = int(input("Enter number of rows/columns: "))
             if (dim <= 0):
-                raise RuntimeError
+                raise ValueError
             break
         except ValueError:
             print("Please enter positive integer")
-        except RuntimeError:
-            print("Please enter positive integer")
+    return dim
+
+# Gets a real-valued square matrix from the user
+def get_square_matrix():
+    dim = get_dim()
 
     # Get matrix values
     matrix = []
