@@ -89,6 +89,7 @@ Once enough people have reached the point that they feel comfortable with basic 
 * [Python](https://www.online-python.com/)
 * [Typescript](https://www.typescriptlang.org/play)
 * [Haskell](https://replit.com/languages/haskell)
+* [Julia](https://julialang.org/learning/tryjulia/)
 
 ## Tutorials
 
@@ -100,6 +101,7 @@ Once enough people have reached the point that they feel comfortable with basic 
 * [C#](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
 * [Scala](https://docs.scala-lang.org/tutorials.html)
 * [Haskell](http://learnyouahaskell.com/introduction)
+* [Julia](https://julialang.org/learning/)
 
 ## Cheat Sheets
 
