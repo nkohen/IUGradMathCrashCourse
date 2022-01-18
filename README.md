@@ -41,7 +41,7 @@ This reading list should suffice for our purposes, but I have also included some
 
 #### Git and GitHub
 
-To begin using GitHub, I recommend you begin with this [set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) tutorial to help with installation and configuration, and then this [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) tutorial where you should attempt to fork this repository instead of the one provided; this will allow you to make changes on your fork and propose them as pull requests to this repository (also see below for corrections to some tutorials).
+To begin using GitHub, I recommend you begin with this [set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) tutorial to help with installation and configuration, and then this [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) tutorial where you should attempt to fork this repository instead of the one provided; this will allow you to make changes on your fork and propose them as pull requests to this repository (also see [below](#tutorials) for corrections to some tutorials).
 
 Once you have done that basic installation and configuration, I recommend following [this tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) which will walk you through the most common commands and workflow of using Git.
 
@@ -95,9 +95,9 @@ Once enough people have reached the point that they feel comfortable with basic 
 
 * [Linux Terminal](https://ubuntu.com/tutorials/command-line-for-beginners)
 * [Getting Started with Git and GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-  * Add to the start of step 6 where one uses "git checkout master" then adds "git branch -M main" before proceeding
-  * Change something before pushing in step 7
-  * Change in step 10 to "git pull origin main" accordingly
+  * If creating a new repository (not forking this one) then to the start of step 6 where one uses "git checkout master" also run "git branch -M main" before proceeding (this changes our branch to "main" instead of "master")
+  * Edit a file in your branch before pushing in step 7 (as it stands the tutorial does not show what happens when a change is actually made)
+  * Change step 10 to run "git pull origin main" (since earlier we changed our branch to "main")
 * [Git](https://docs.github.com/en/get-started/quickstart)
 * [GitHub Gists](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 * [Go](https://go.dev/tour/welcome/1)
