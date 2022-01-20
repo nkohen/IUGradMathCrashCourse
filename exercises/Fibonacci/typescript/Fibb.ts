@@ -1,14 +1,31 @@
-var i = 2;
-let N = 10
+var fibCache: number[] = [1, 1]
 
-var f :number[]=[N]
+function fibonacci(m: number): number {
+    if (fibCache.length < m){
+        for (var i = fibCache.length; i <= m; i++) {
+            fibCache[i] = fibCache[i-1] + fibCache[i-2];
+        }
+    }
+    return fibCache[m-1]
+}
 
-f[0] = 1;
-f[1] = 1;
+// computes the golden ratio
+function computephi(): number {
+    return (Math.sqrt(5) + 1) / 2
+}
 
-for (i = 2; i <=N-1; i++){
-    f[i] = f[i-1]+f[i-2];
+// approximates the golden ratio using fibonacci sequence
+function approxphi(m: number): number {
+    let aprxphi = fibonacci(m-2) / fibonacci(m-3);
+    return aprxphi
 }
 
 
-console.log(f[N-1]);
+let n = 10;
+let fibs = fibonacci(n);
+let actual = computephi();
+let approx = approxphi(n);
+let err = actual - approx;
+console.log("the " + n + "th fibbonaci number: ", fibs);
+console.log("the approximation of the golden ratio:", approx);
+console.log("the error in approimation:", err);
