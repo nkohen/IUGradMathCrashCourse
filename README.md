@@ -74,6 +74,7 @@ Once enough people have reached the point that they feel comfortable with basic 
     * [FROST](https://suredbits.com/schnorr-applications-frost/)
 * [MuSig Paper](https://eprint.iacr.org/2018/068.pdf)
 * [Wagner Generalized Birthday Problem Paper](https://www.iacr.org/archive/crypto2002/24420288/24420288.pdf)
+* [MuSig2 Blog Post](https://popeller.io/schnorr-musig2)
 * [MuSig2 Paper](https://eprint.iacr.org/2020/1261.pdf)
 * [t-bast cheat sheat](https://github.com/t-bast/lightning-docs/blob/master/schnorr.md)
 * Extra
