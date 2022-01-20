@@ -97,7 +97,7 @@ Once enough people have reached the point that they feel comfortable with basic 
 * [Getting Started with Git and GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
   * If creating a new repository (not forking this one) then to the start of step 6 where one uses "git checkout master" also run "git branch -M main" before proceeding (this changes our branch to "main" instead of "master")
   * Edit a file in your branch before pushing in step 7 (as it stands the tutorial does not show what happens when a change is actually made)
-  * Change step 10 to run "git pull origin main" (since earlier we changed our branch to "main")
+  * If you forked a different repository, for step 10, instead of using "git pull origin master" run "git pull origin main" (since earlier we changed our branch to "main")
 * [Git](https://docs.github.com/en/get-started/quickstart)
 * [GitHub Gists](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 * [Go](https://go.dev/tour/welcome/1)
