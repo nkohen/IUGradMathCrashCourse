@@ -1,16 +1,29 @@
-# This is a sample Python script.
+def get_nums():
+    while(True):
+        try:
+            num1 = int(input("Please enter a positive integer: "))
+            break
+        except TypeError:
+            pass
+    while(True):
+        try:
+            num2 = int(input("Please enter a positive integer: "))
+            break
+        except TypeError:
+            pass
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    return([num1,num2])
 
+def euclid_loop(x,y,prev):
+    big = max(x, y)
+    small = min(x, y)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    r = big % small
+    return (prev if r == 0 else euclid_loop(r, small, r))
 
+def euclid(x,y):
+    return(euclid_loop(x,y,min(x,y)))
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    nums = get_nums()
+    print(euclid(nums[0],nums[1]))
