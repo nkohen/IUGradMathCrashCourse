@@ -51,6 +51,22 @@ const isAlive = (x: number, y: number): number => {
 }
 const neighboursCount = (x: number, y: number): number => {
     let count = 0;
+            /*if ((x == 0) || (x == TILES_X-1)){
+
+                for(let j of [-1,0,1]){
+
+                    count += isAlive(TILES_X-1-x,TILES_X-1-y+j);
+                }
+            }
+            else if ((y == 0) || (y == TILES_Y-1)){
+
+                for(let i of [-1,0,1]){
+
+                    count += isAlive(TILES_X-1-x+i,TILES_Y-1-y);
+                }
+            }*/
+       
+    
     for(let i of [-1, 0, 1]) {
         for(let j of [-1, 0, 1]) {
             if (!(i === 0 && j === 0)) {
@@ -108,9 +124,11 @@ const nextGen = () => {
     BOARD = computeNextGeneration();
     drawAll();
 }
+var gameSpeed=100;
+let looplength :number;
 const nextGenLoop = () => {
 
-    setInterval(nextGen,100);
+   let looplength= setInterval(nextGen,gameSpeed);
 }
 
 canvas.addEventListener("click", e => {
@@ -131,16 +149,28 @@ const generateRandom = () => {
 }
 
 let isGamePaused = false;
+
 document.addEventListener("keydown", e => {
     if (e.key === 'p') {
+       
         isGamePaused = !isGamePaused;
+
     } else if (e.key === "+") {
+
+        clearInterval(looplength);
         gameSpeed = Math.max(50, gameSpeed - 50);
-    } else if (e.key === '-') {
+        nextGenLoop();
+
+    } else if (e.key === '-') { // This is broken, it speeds it up :(
+
+        clearInterval(looplength);
         gameSpeed = Math.min(2000, gameSpeed + 50);
+        nextGenLoop();
 
     } else if (e.key === 'r') {
+
         BOARD = generateRandom();
+
         drawAll();
     }
 });
@@ -148,7 +178,7 @@ document.addEventListener("keydown", e => {
 
 
 
-drawBorders()
-drawBoard()
-nextGen()
-nextGenLoop()
+drawBorders();
+drawBoard();
+nextGen();
+nextGenLoop(); 
