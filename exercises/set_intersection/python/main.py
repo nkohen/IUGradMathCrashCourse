@@ -1,4 +1,5 @@
 # Returns the intersection of two lists, tuples, or sets
+# Note True == 1 and False == 0
 def intersection(list1,list2):
     try:
         return set(list1) & set(list2)
@@ -14,4 +15,8 @@ def func_intersection(f1,f2,n):
         print("func_intersection: Inputs must be functions defined on the integers")
 
 if __name__ == '__main__':
-    func_intersection(1,2,3)
+    def f1(n):
+        return n ** 2
+    def f2(n):
+        return n
+    print(func_intersection(f1,f2,16))
