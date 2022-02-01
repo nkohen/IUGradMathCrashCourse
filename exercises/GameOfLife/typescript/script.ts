@@ -128,7 +128,7 @@ var gameSpeed=100;
 let looplength :number;
 const nextGenLoop = () => {
 
-   let looplength= setInterval(nextGen,gameSpeed);
+   looplength= setInterval(nextGen,gameSpeed); 
 }
 
 canvas.addEventListener("click", e => {
@@ -161,7 +161,7 @@ document.addEventListener("keydown", e => {
         gameSpeed = Math.max(50, gameSpeed - 50);
         nextGenLoop();
 
-    } else if (e.key === '-') { // This is broken, it speeds it up :(
+    } else if (e.key === '-') {
 
         clearInterval(looplength);
         gameSpeed = Math.min(2000, gameSpeed + 50);
