@@ -39,6 +39,14 @@ class Testing(unittest.TestCase):
                                       [1,1,1,1]],
                                      3,3),
                          mat)
+        self.assertEqual(first_minor([[2, -3, 0, 1],
+                                      [-2, 1, 3, 1],
+                                      [0, -4, -2, 1],
+                                      [-4, 2, 3, 1]],
+                                     2, 0),
+                         [[-3, 0, 1],
+                          [1, 3, 1],
+                          [2, 3, 1]])
 
 if __name__ == '__main__':
     unittest.main()
