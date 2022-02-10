@@ -8,3 +8,4 @@
 /httpRequests/
 # ignore .idea
 *.idea/
+*__pycache__/
