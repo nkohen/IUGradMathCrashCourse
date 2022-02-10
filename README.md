@@ -41,7 +41,7 @@ This reading list should suffice for our purposes, but I have also included some
 
 #### Git and GitHub
 
-To begin using GitHub, I recommend you begin with this [set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) tutorial to help with installation and configuration, and then this [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) tutorial where you should attempt to fork this repository instead of the one provided; this will allow you to make changes on your fork and propose them as pull requests to this repository.
+To begin using GitHub, I recommend you begin with this [set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) tutorial to help with installation and configuration, and then this [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) tutorial where you should attempt to fork this repository instead of the one provided; this will allow you to make changes on your fork and propose them as pull requests to this repository (also see [below](#tutorials) for corrections to some tutorials).
 
 Once you have done that basic installation and configuration, I recommend following [this tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) which will walk you through the most common commands and workflow of using Git.
 
@@ -74,6 +74,7 @@ Once enough people have reached the point that they feel comfortable with basic 
     * [FROST](https://suredbits.com/schnorr-applications-frost/)
 * [MuSig Paper](https://eprint.iacr.org/2018/068.pdf)
 * [Wagner Generalized Birthday Problem Paper](https://www.iacr.org/archive/crypto2002/24420288/24420288.pdf)
+* [MuSig2 Blog Post](https://popeller.io/schnorr-musig2)
 * [MuSig2 Paper](https://eprint.iacr.org/2020/1261.pdf)
 * [t-bast cheat sheat](https://github.com/t-bast/lightning-docs/blob/master/schnorr.md)
 * Extra
@@ -89,17 +90,22 @@ Once enough people have reached the point that they feel comfortable with basic 
 * [Python](https://www.online-python.com/)
 * [Typescript](https://www.typescriptlang.org/play)
 * [Haskell](https://replit.com/languages/haskell)
+* [Julia](https://julialang.org/learning/tryjulia/)
 
 ## Tutorials
 
 * [Linux Terminal](https://ubuntu.com/tutorials/command-line-for-beginners)
 * [Getting Started with Git and GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+  * If creating a new repository (not forking this one) then to the start of step 6 where one uses "git checkout master" also run "git branch -M main" before proceeding (this changes our branch to "main" instead of "master")
+  * Edit a file in your branch before pushing in step 7 (as it stands the tutorial does not show what happens when a change is actually made)
+  * If you forked a different repository, for step 10, instead of using "git pull origin master" run "git pull origin main" (since earlier we changed our branch to "main")
 * [Git](https://docs.github.com/en/get-started/quickstart)
 * [GitHub Gists](https://docs.github.com/en/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 * [Go](https://go.dev/tour/welcome/1)
 * [C#](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
 * [Scala](https://docs.scala-lang.org/tutorials.html)
 * [Haskell](http://learnyouahaskell.com/introduction)
+* [Julia](https://julialang.org/learning/)
 
 ## Cheat Sheets
 
