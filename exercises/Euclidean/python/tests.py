@@ -10,5 +10,10 @@ class Test(unittest.TestCase):
             num2 = random.randint(1,1000)
             self.assertEqual(euclid(num1,num2),math.gcd(num1,num2))
 
+    def test_inverse(self):
+        self.assertEqual(modular_inverse(7,8),7)
+        self.assertEqual(modular_inverse(3,11),4)
+        self.assertEqual(modular_inverse(4,12),False)
+
 if __name__ == '__main__':
     unittest.main()

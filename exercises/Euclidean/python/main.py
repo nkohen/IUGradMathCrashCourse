@@ -44,7 +44,7 @@ def modular_inverse_loop(x,y,mod,loopcount,q1,q2,p1,p2):
     else:
         p0 = (p2 - p1*q2) % mod
 
-    if (r == 1): #Issue when this is also the first iteration
+    if (r == 1):
         pnext = 1 if loopcount == 1 else (p1 - p0*q1) % mod
         return (p0 - pnext*q0) % mod
     elif (r == 0):
