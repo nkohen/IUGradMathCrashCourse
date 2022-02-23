@@ -25,7 +25,11 @@ def euclid(x,y):
     return euclid_loop(x,y,min(x,y))
 
 def modular_inverse(num1,mod):
-    return modular_inverse_loop(num1 % mod, mod, mod, 1, None, None, None, None)
+    ret = modular_inverse_loop(num1 % mod, mod, mod, 1, None, None, None, None)
+    if (ret == False):
+        return str(num1) + " does not have an inverse mod " + str(mod)
+    else:
+        return "The inverse of " + str(num1) + " mod " + str(mod) + " is " + str(ret)
 
 def modular_inverse_loop(x,y,mod,loopcount,q1,q2,p1,p2):
     big = max(x, y)
@@ -53,4 +57,4 @@ def modular_inverse_loop(x,y,mod,loopcount,q1,q2,p1,p2):
         return modular_inverse_loop(small,r,mod,loopcount + 1,q0,q1,p0,p1)
 
 if __name__ == '__main__':
-    print(modular_inverse(7,8))
+    print(modular_inverse(4,8))

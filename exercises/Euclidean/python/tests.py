@@ -11,9 +11,9 @@ class Test(unittest.TestCase):
             self.assertEqual(euclid(num1,num2),math.gcd(num1,num2))
 
     def test_inverse(self):
-        self.assertEqual(modular_inverse(7,8),7)
-        self.assertEqual(modular_inverse(3,11),4)
-        self.assertEqual(modular_inverse(4,12),False)
+        self.assertEqual(modular_inverse(7,8),"The inverse of 7 mod 8 is 7")
+        self.assertEqual(modular_inverse(3,11),"The inverse of 3 mod 11 is 4")
+        self.assertEqual(modular_inverse(4,12),"4 does not have an inverse mod 12")
 
 if __name__ == '__main__':
     unittest.main()
