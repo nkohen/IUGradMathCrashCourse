@@ -31,6 +31,11 @@ def modular_inverse(num1,mod):
     else:
         return "The inverse of " + str(num1) + " mod " + str(mod) + " is " + str(ret)
 
+# Here is a reference for the extended Euclidean algorithm
+# http://www-math.ucdenver.edu/~wcherowi/courses/m5410/exeucalg.html
+# q1/p1 represent the values from the previous step
+# q2/p2 represent the values from two steps prior
+# loopcount records the number of iterations in order to manually set the correct values for the first two loops
 def modular_inverse_loop(x,y,mod,loopcount,q1,q2,p1,p2):
     big = max(x, y)
     small = min(x, y)
