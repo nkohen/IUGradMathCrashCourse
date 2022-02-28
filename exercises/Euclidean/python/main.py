@@ -1,19 +1,16 @@
-def get_nums():
-    while(True):
+def input_num(message):
+    while (True):
         try:
-            num1 = int(input("Please enter a positive integer: "))
-            break
-        except TypeError:
-            pass
-    while(True):
-        try:
-            num2 = int(input("Please enter a positive integer: "))
-            break
-        except TypeError:
+            num = int(input(message))
+            if (num > 0):
+                return num
+            else:
+                pass
+        except ValueError:
             pass
 
-    return [num1,num2]
-
+# Here is a reference for the Euclidean algorithm
+# http://www-math.ucdenver.edu/~wcherowi/courses/m5410/exeucalg.html
 def euclid_loop(x,y,prev):
     big = max(x, y)
     small = min(x, y)
@@ -21,15 +18,15 @@ def euclid_loop(x,y,prev):
     r = big % small
     return prev if r == 0 else euclid_loop(r, small, r)
 
-def euclid(x,y):
-    return euclid_loop(x,y,min(x,y))
+def gcd():
+    num1 = input_num("Please enter the first positive integer: ")
+    num2 = input_num("Please enter the second positive integer: ")
+    return euclid_loop(num1,num2,min(num1,num2))
 
-def modular_inverse(num1,mod):
-    ret = modular_inverse_loop(num1 % mod, mod, mod, 1, None, None, None, None)
-    if (ret == False):
-        return str(num1) + " does not have an inverse mod " + str(mod)
-    else:
-        return "The inverse of " + str(num1) + " mod " + str(mod) + " is " + str(ret)
+def modular_inverse():
+    num = input_num("Please enter a positive integer: ")
+    mod = input_num("Please enter a modulus: ")
+    return modular_inverse_loop(num % mod, mod, mod, 1, None, None, None, None)
 
 # Here is a reference for the extended Euclidean algorithm
 # http://www-math.ucdenver.edu/~wcherowi/courses/m5410/exeucalg.html
@@ -62,4 +59,4 @@ def modular_inverse_loop(x,y,mod,loopcount,q1,q2,p1,p2):
         return modular_inverse_loop(small,r,mod,loopcount + 1,q0,q1,p0,p1)
 
 if __name__ == '__main__':
-    print(modular_inverse(4,8))
+    print(gcd())
