@@ -5,18 +5,20 @@ const ctx = canvas.getContext("2d");
 const TILE_SIZE = 20;
 const TILES_X = width / TILE_SIZE;
 const TILES_Y = height / TILE_SIZE;
+//color of the "alive" squares
 ctx.fillStyle = "rgb(100, 240, 150)";
+//color of the grid line
 ctx.strokeStyle = "rgb(90, 90, 90)";
 ctx.lineWidth = 1;
 
 const drawBorders = () => {
-    for(let i=0;i<TILES_X;i++) {
+    for(let i=0; i<TILES_X; i++) {
         ctx.beginPath();
         ctx.moveTo(i * TILE_SIZE - 0.5, 0);
         ctx.lineTo(i * TILE_SIZE - 0.5, height);
         ctx.stroke();
     }
-for(let j=0;j<TILES_Y;j++) {
+    for(let j=0; j<TILES_Y; j++) {
         ctx.beginPath();
         ctx.moveTo(0, j * TILE_SIZE - 0.5);
         ctx.lineTo(width, j * TILE_SIZE - 0.5);
@@ -26,7 +28,7 @@ for(let j=0;j<TILES_Y;j++) {
 
 const prepareBoard = (): boolean[][] => {
     const b = [];
-    for(let i=0;i<TILES_X;i++) {
+    for(let i=0; i<TILES_X; i++) {
         const row = [];
         for(let j=0;j<TILES_Y;j++) {
             row.push(false);
@@ -35,7 +37,7 @@ const prepareBoard = (): boolean[][] => {
     }
     return b;
 }
-
+// initializes glider
 let BOARD = prepareBoard();
 BOARD[1][0] = true;
 BOARD[2][1] = true;
@@ -51,20 +53,22 @@ const isAlive = (x: number, y: number): number => {
 }
 const neighboursCount = (x: number, y: number): number => {
     let count = 0;
-            /*if ((x == 0) || (x == TILES_X-1)){
+    // attempting to modify board to be a projective plane
+
+            if ((x == 0) || (x == TILES_X-1)){
 
                 for(let j of [-1,0,1]){
 
-                    count += isAlive(TILES_X-1-x,TILES_X-1-y+j);
+                    count += isAlive(TILES_X-1-x,TILES_Y-1-y+j);
                 }
             }
             else if ((y == 0) || (y == TILES_Y-1)){
 
-                for(let i of [-1,0,1]){
+                for(let j of [-1,0,1]){
 
-                    count += isAlive(TILES_X-1-x+i,TILES_Y-1-y);
+                    count += isAlive(TILES_X-1-x+j,TILES_Y-1-y);
                 }
-            }*/
+            }
        
     
     for(let i of [-1, 0, 1]) {
@@ -92,12 +96,12 @@ const computeNextGeneration = () => {
     const board = prepareBoard();
     for(let i=0;i<TILES_X;i++) {
         for(let j=0;j<TILES_Y;j++) {
+            const count = neighboursCount(i, j);
             if (!isAlive(i, j)) {
-                if (neighboursCount(i, j) === 3) {
+                if (count === 3) {
                     board[i][j] = true;
                 }
             } else {
-                const count = neighboursCount(i, j);
                 if (count == 2 || count == 3) {
                     board[i][j] = true;
                 }
@@ -124,6 +128,7 @@ const nextGen = () => {
     BOARD = computeNextGeneration();
     drawAll();
 }
+//Time in milliseconds between each generation
 var gameSpeed=100;
 let looplength :number;
 const nextGenLoop = () => {
@@ -151,22 +156,23 @@ const generateRandom = () => {
 let isGamePaused = false;
 
 document.addEventListener("keydown", e => {
+    //Pauses game
     if (e.key === 'p') {
        
         isGamePaused = !isGamePaused;
-
+        //Speeds up game
     } else if (e.key === "+") {
 
         clearInterval(looplength);
         gameSpeed = Math.max(50, gameSpeed - 50);
         nextGenLoop();
-
+        //Slows down game
     } else if (e.key === '-') {
 
         clearInterval(looplength);
         gameSpeed = Math.min(2000, gameSpeed + 50);
         nextGenLoop();
-
+        //generates alive randomly
     } else if (e.key === 'r') {
 
         BOARD = generateRandom();
